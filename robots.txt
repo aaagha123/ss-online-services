@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Domain milne ke baad neeche wali line uncomment karke apna URL daal dein:
+# Sitemap: https://yourdomain.com/sitemap.xml
