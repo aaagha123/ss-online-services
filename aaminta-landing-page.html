@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aaminta Business Services — GST, MSME, Company Registration & Zyada</title>
+<meta name="description" content="GST, MSME/Udyam, Pvt Ltd Company Registration, ITR Filing aur 20+ business services. 100% Online. WhatsApp par baat karein.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0E2A47;
+    --navy-2:#123a5e;
+    --saffron:#FF7B25;
+    --saffron-dark:#e0631a;
+    --cream:#FBF7EF;
+    --cream-2:#F3ECDD;
+    --seal:#1C7C4F;
+    --ink:#1C1F24;
+    --ink-soft:#4A5058;
+    --hair:#DED5C0;
+    --white:#FFFFFF;
+    --radius:14px;
+    --shadow: 0 10px 30px -12px rgba(14,42,71,0.25);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    color:var(--navy);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+  }
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+  }
+  a{color:inherit;}
+  img,svg{display:block; max-width:100%;}
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  @media(max-width:700px){ .wrap{padding:0 18px;} }
+
+  /* ---------- TOP BAR ---------- */
+  .topbar{
+    background:var(--navy);
+    color:#EFE7D6;
+    font-size:13px;
+    padding:9px 0;
+  }
+  .topbar .wrap{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;}
+  .topbar .tag{display:flex; align-items:center; gap:8px;}
+  .topbar .dot{width:7px;height:7px;border-radius:50%;background:#5BD98A; box-shadow:0 0 0 3px rgba(91,217,138,0.25);}
+  .topbar a.wa-top{color:#FFDCC0; font-weight:600; text-decoration:none;}
+
+  /* ---------- HEADER ---------- */
+  header.site{
+    padding:22px 0 0;
+  }
+  .brandrow{
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+  }
+  .brand{
+    display:flex; align-items:center; gap:12px;
+  }
+  .seal-mini{
+    width:42px;height:42px;border-radius:50%;
+    background:conic-gradient(from 180deg, var(--saffron), var(--navy) 35%, var(--saffron) 70%, var(--navy));
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:var(--shadow);
+    flex-shrink:0;
+  }
+  .seal-mini span{
+    width:32px;height:32px;border-radius:50%;background:var(--cream);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif; font-weight:700; font-size:15px; color:var(--navy);
+  }
+  .brand-name{font-family:'Fraunces', serif; font-weight:600; font-size:19px; color:var(--navy);}
+  .brand-name small{display:block; font-family:'Inter',sans-serif; font-weight:600; font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--saffron-dark);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:38px 0 60px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.15fr 0.95fr;
+    gap:48px;
+    align-items:start;
+  }
+  @media(max-width:940px){
+    .hero-grid{grid-template-columns:1fr; gap:34px;}
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:12px; font-weight:600;
+    color:var(--seal);
+    background:rgba(28,124,79,0.09);
+    border:1px solid rgba(28,124,79,0.25);
+    padding:6px 12px 6px 10px;
+    border-radius:999px;
+    margin-bottom:20px;
+  }
+  .eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--seal); animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(28,124,79,0.45);}70%{box-shadow:0 0 0 8px rgba(28,124,79,0);}100%{box-shadow:0 0 0 0 rgba(28,124,79,0);}}
+
+  .hero h1{
+    font-size:clamp(32px, 4.6vw, 52px);
+    font-weight:600;
+    max-width:15ch;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--saffron-dark);
+    position:relative;
+  }
+  .hero .lede{
+    margin-top:18px;
+    font-size:17.5px;
+    color:var(--ink-soft);
+    max-width:48ch;
+  }
+
+  .trust-strip{
+    display:flex; flex-wrap:wrap; gap:10px 26px;
+    margin-top:30px;
+  }
+  .trust-item{display:flex; align-items:center; gap:9px; font-size:13.5px; color:var(--navy); font-weight:600;}
+  .trust-item .num{font-family:'Fraunces',serif; font-size:21px; color:var(--saffron-dark); font-weight:700;}
+
+  .service-chip-row{
+    display:flex; flex-wrap:wrap; gap:8px;
+    margin-top:28px;
+  }
+  .service-chip-row span{
+    font-size:12.5px; font-weight:600; color:var(--navy);
+    background:var(--white);
+    border:1px solid var(--hair);
+    padding:6px 12px;
+    border-radius:999px;
+  }
+
+  /* ---------- FORM CARD ---------- */
+  .form-card{
+    background:var(--white);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid var(--hair);
+    padding:28px 26px 26px;
+    position:relative;
+  }
+  @media(min-width:941px){
+    .form-card{position:sticky; top:22px;}
+  }
+  .form-card::before{
+    content:"";
+    position:absolute; top:0; left:26px; right:26px; height:4px;
+    background:linear-gradient(90deg, var(--saffron), var(--seal));
+    border-radius:0 0 6px 6px;
+  }
+  .form-head{margin-bottom:18px;}
+  .form-head .mono{font-size:11px; color:var(--saffron-dark); font-weight:600; display:block; margin-bottom:6px;}
+  .form-head h2{font-size:23px; font-weight:600;}
+  .form-head p{font-size:13.5px; color:var(--ink-soft); margin-top:6px;}
+
+  .field{margin-bottom:15px;}
+  .field label{
+    display:block; font-size:12.5px; font-weight:700; color:var(--navy);
+    margin-bottom:6px;
+  }
+  .field label .req{color:var(--saffron-dark);}
+  .field input[type=text],
+  .field input[type=tel],
+  .field select{
+    width:100%;
+    padding:12px 13px;
+    border:1.5px solid var(--hair);
+    border-radius:9px;
+    font-family:'Inter',sans-serif;
+    font-size:14.5px;
+    color:var(--ink);
+    background:var(--cream);
+    transition:border-color .15s, background .15s;
+    appearance:none;
+    -webkit-appearance:none;
+  }
+  .field select{
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'><path d='M1 1l6 6 6-6' stroke='%230E2A47' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat:no-repeat;
+    background-position:right 14px center;
+    padding-right:36px;
+  }
+  .field input:focus,
+  .field select:focus{
+    outline:none;
+    border-color:var(--saffron);
+    background:var(--white);
+    box-shadow:0 0 0 3px rgba(255,123,37,0.15);
+  }
+  .err-msg{
+    display:none;
+    font-size:12px; color:#C0392B; margin-top:5px; font-weight:600;
+  }
+  .field.invalid input,
+  .field.invalid select{border-color:#C0392B; background:#FFF5F3;}
+  .field.invalid .err-msg{display:block;}
+
+  .timeline-options{
+    display:grid; grid-template-columns:1fr 1fr; gap:8px;
+  }
+  .timeline-options label{
+    display:flex; align-items:center; gap:8px;
+    border:1.5px solid var(--hair);
+    border-radius:9px;
+    padding:10px 11px;
+    font-size:13px; font-weight:600; color:var(--navy);
+    cursor:pointer;
+    background:var(--cream);
+    transition:all .15s;
+  }
+  .timeline-options input{accent-color:var(--saffron-dark); width:15px; height:15px; flex-shrink:0;}
+  .timeline-options label:has(input:checked){
+    border-color:var(--saffron); background:#FFF4EC;
+  }
+
+  .submit-btn{
+    width:100%;
+    margin-top:6px;
+    background:var(--seal);
+    color:var(--white);
+    border:none;
+    padding:15px 18px;
+    border-radius:10px;
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    font-size:15.5px;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    transition:background .15s, transform .1s;
+  }
+  .submit-btn:hover{background:#166a43;}
+  .submit-btn:active{transform:scale(0.98);}
+  .submit-btn svg{width:19px;height:19px; flex-shrink:0;}
+
+  .form-foot{
+    margin-top:13px;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    text-align:center;
+  }
+
+  /* ---------- SERVICES SECTION ---------- */
+  .services{
+    padding:20px 0 66px;
+  }
+  .section-head{
+    max-width:640px;
+    margin-bottom:34px;
+  }
+  .section-head .mono{font-size:11.5px; color:var(--saffron-dark); font-weight:700; display:block; margin-bottom:10px;}
+  .section-head h2{font-size:clamp(24px,3vw,32px); font-weight:600;}
+  .section-head p{margin-top:10px; color:var(--ink-soft); font-size:15px;}
+
+  .service-groups{display:flex; flex-direction:column; gap:34px;}
+  .group-label{
+    display:flex; align-items:baseline; gap:12px; margin-bottom:14px;
+  }
+  .group-label .file-no{
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12.5px;
+    color:var(--white); background:var(--navy);
+    padding:3px 9px; border-radius:5px;
+  }
+  .group-label h3{font-size:16.5px; font-weight:600; color:var(--navy);}
+
+  .svc-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:12px;
+  }
+  @media(max-width:800px){ .svc-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:520px){ .svc-grid{grid-template-columns:1fr;} }
+
+  .svc-card{
+    background:var(--white);
+    border:1px solid var(--hair);
+    border-radius:11px;
+    padding:15px 16px;
+    display:flex; align-items:flex-start; gap:11px;
+    font-size:14px; font-weight:600; color:var(--navy);
+    opacity:0; transform:translateY(10px);
+    animation:rise .5s ease forwards;
+  }
+  .svc-card .tick{
+    width:20px;height:20px;border-radius:50%;
+    background:rgba(28,124,79,0.12);
+    color:var(--seal);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0; margin-top:1px;
+    font-size:12px;
+  }
+  @keyframes rise{to{opacity:1; transform:translateY(0);}}
+
+  /* ---------- PROCESS ---------- */
+  .process{
+    background:var(--navy);
+    color:#E9E2D0;
+    padding:56px 0;
+  }
+  .process .section-head h2{color:var(--white);}
+  .process .section-head .mono{color:var(--saffron);}
+  .process .section-head p{color:#B9C4D1;}
+  .steps{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:10px;
+  }
+  @media(max-width:860px){ .steps{grid-template-columns:1fr 1fr;} }
+  @media(max-width:520px){ .steps{grid-template-columns:1fr;} }
+  .step{
+    border-left:2px solid rgba(255,123,37,0.4);
+    padding-left:16px;
+  }
+  .step .mono{font-size:11px; color:var(--saffron); font-weight:700;}
+  .step h4{font-family:'Fraunces',serif; font-size:18px; font-weight:600; color:var(--white); margin:8px 0 6px;}
+  .step p{font-size:13.5px; color:#B9C4D1;}
+
+  /* ---------- FOOTER CTA ---------- */
+  .footcta{
+    padding:54px 0 40px;
+    text-align:center;
+  }
+  .footcta .seal-big{
+    width:66px;height:66px;border-radius:50%;margin:0 auto 18px;
+    background:conic-gradient(from 180deg, var(--saffron), var(--navy) 35%, var(--saffron) 70%, var(--navy));
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:var(--shadow);
+  }
+  .footcta .seal-big span{
+    width:52px;height:52px;border-radius:50%;background:var(--cream);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:var(--navy);
+  }
+  .footcta h2{font-size:clamp(24px,3.4vw,34px); max-width:20ch; margin:0 auto;}
+  .footcta p{color:var(--ink-soft); margin-top:12px; font-size:15px;}
+  .footcta .wa-cta{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--seal); color:var(--white);
+    padding:15px 26px; border-radius:11px;
+    font-weight:700; font-size:15.5px;
+    text-decoration:none; margin-top:24px;
+  }
+  .footcta .wa-cta svg{width:20px;height:20px;}
+
+  footer.bottom{
+    border-top:1px solid var(--hair);
+    padding:22px 0 30px;
+    text-align:center;
+    font-size:12.5px;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- SUCCESS OVERLAY ---------- */
+  .overlay{
+    position:fixed; inset:0; background:rgba(14,42,71,0.55);
+    display:none; align-items:center; justify-content:center;
+    padding:20px; z-index:50;
+  }
+  .overlay.show{display:flex;}
+  .overlay-card{
+    background:var(--white); border-radius:16px; padding:34px 28px;
+    max-width:360px; text-align:center; box-shadow:0 30px 60px -20px rgba(0,0,0,0.4);
+  }
+  .overlay-card .tick-big{
+    width:56px;height:56px;border-radius:50%;background:rgba(28,124,79,0.12);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 16px;
+    color:var(--seal); font-size:26px;
+  }
+  .overlay-card h3{font-size:20px;}
+  .overlay-card p{font-size:14px; color:var(--ink-soft); margin-top:10px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <div class="tag"><span class="dot"></span> Maharashtra bhar mein service available</div>
+      <a class="wa-top" href="https://wa.me/917796548695" target="_blank" rel="noopener">WhatsApp: +91 77965 48695</a>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="wrap brandrow">
+      <div class="brand">
+        <div class="seal-mini"><span>AB</span></div>
+        <div class="brand-name">Aaminta Business Services<small>Registration • Compliance • Filing</small></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span> 100% Online — Ghar Baithe Registration</div>
+        <h1>Apna business <em>legal aur official</em> banayein, ek hi jagah se</h1>
+        <p class="lede">GST, MSME (Udyam), Pvt. Ltd. Company, Trademark, FSSAI, IEC — 20+ registrations aur filings, expert team ke saath, bina office jaaye.</p>
+
+        <div class="trust-strip">
+          <div class="trust-item"><span class="num">20+</span> Services ek jagah</div>
+          <div class="trust-item"><span class="num">100%</span> Online Process</div>
+          <div class="trust-item"><span class="num">2</span> Din Mein Shuruwaat</div>
+        </div>
+
+        <div class="service-chip-row">
+          <span>GST Registration</span>
+          <span>MSME / Udyam</span>
+          <span>Pvt. Ltd. Company</span>
+          <span>ITR Filing</span>
+          <span>Trademark</span>
+          <span>FSSAI</span>
+        </div>
+      </div>
+
+      <div class="form-card" id="leadFormCard">
+        <div class="form-head">
+          <span class="mono">Free Consultation</span>
+          <h2>Apni details bharein</h2>
+          <p>Form submit karte hi hum WhatsApp par turant contact karenge.</p>
+        </div>
+
+        <form id="leadForm" novalidate>
+          <div class="field" id="f-name">
+            <label>Aapka Naam <span class="req">*</span></label>
+            <input type="text" id="name" placeholder="Jaise: Rajesh Sharma" autocomplete="name">
+            <div class="err-msg">Kripya apna naam likhein</div>
+          </div>
+
+          <div class="field" id="f-mobile">
+            <label>Mobile Number <span class="req">*</span></label>
+            <input type="tel" id="mobile" placeholder="10 digit mobile number" maxlength="10" inputmode="numeric" autocomplete="tel">
+            <div class="err-msg">Sahi 10-digit mobile number likhein</div>
+          </div>
+
+          <div class="field" id="f-service">
+            <label>Service Required <span class="req">*</span></label>
+            <select id="service">
+              <option value="" selected disabled>Service select karein</option>
+              <option>GST Registration</option>
+              <option>MSME (Udyam) Registration</option>
+              <option>Private Limited Company Registration</option>
+              <option>Company Registration (Other Type)</option>
+              <option>NGO Registration</option>
+              <option>Trademark &amp; Logo Registration</option>
+              <option>FSSAI License</option>
+              <option>Import Export Code (IEC)</option>
+              <option>APEDA Certificate</option>
+              <option>E-RCMC</option>
+              <option>ICEGATE Registration / AD Code</option>
+              <option>Digital Signature Certificate (DSC)</option>
+              <option>Startup India Certificate</option>
+              <option>ITR Filing (Income Tax Return)</option>
+              <option>GST Return Filing</option>
+              <option>TDS Return Filing</option>
+              <option>ISO Certification</option>
+              <option>Copyright Registration</option>
+              <option>Accounting Services</option>
+              <option>Form DIR-3 KYC</option>
+              <option>Mujhe Sahi Service Nahi Pata — Guide Karein</option>
+            </select>
+            <div class="err-msg">Kripya ek service select karein</div>
+          </div>
+
+          <div class="field" id="f-timeline">
+            <label>Registration kab tak karna hai? <span class="req">*</span></label>
+            <div class="timeline-options">
+              <label><input type="radio" name="timeline" value="Abhi (Immediately)"> Abhi</label>
+              <label><input type="radio" name="timeline" value="1 Hafte Mein"> 1 Hafte Mein</label>
+              <label><input type="radio" name="timeline" value="2 Hafte Mein"> 2 Hafte Mein</label>
+              <label><input type="radio" name="timeline" value="3 Hafte Mein"> 3 Hafte Mein</label>
+              <label><input type="radio" name="timeline" value="1 Mahine Mein"> 1 Mahine Mein</label>
+            </div>
+            <div class="err-msg">Kripya ek option select karein</div>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.71.45 3.38 1.29 4.85L2.05 22l5.36-1.4a9.9 9.9 0 0 0 4.63 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.4c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.25-8.25 8.25zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.24-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.24-.86.85-.86 2.06 0 1.22.88 2.4 1 2.56.13.17 1.74 2.68 4.24 3.75.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.1-.22-.16-.48-.28z"/></svg>
+            WhatsApp Par Bhejein
+          </button>
+
+          <div class="form-foot">Aapki details sirf Aaminta Business Services ke paas jaati hai — koi spam nahi.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="mono">Hamari Services</span>
+        <h2>Registration se le kar filing tak, sab kuch ek jagah</h2>
+        <p>Aapko jo bhi official documentation chahiye business shuru ya chalane ke liye, hum wo handle karte hain.</p>
+      </div>
+
+      <div class="service-groups">
+        <div>
+          <div class="group-label"><span class="file-no">F-01</span><h3>Business Registration</h3></div>
+          <div class="svc-grid">
+            <div class="svc-card"><span class="tick">✓</span>GST Registration</div>
+            <div class="svc-card"><span class="tick">✓</span>MSME (Udyam) Registration</div>
+            <div class="svc-card"><span class="tick">✓</span>Private Limited Company Registration</div>
+            <div class="svc-card"><span class="tick">✓</span>NGO Registration</div>
+            <div class="svc-card"><span class="tick">✓</span>Startup India Certificate</div>
+            <div class="svc-card"><span class="tick">✓</span>Digital Signature Certificate (DSC)</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="group-label"><span class="file-no">F-02</span><h3>Trade &amp; Export Licenses</h3></div>
+          <div class="svc-grid">
+            <div class="svc-card"><span class="tick">✓</span>Import Export Code (IEC)</div>
+            <div class="svc-card"><span class="tick">✓</span>APEDA Certificate</div>
+            <div class="svc-card"><span class="tick">✓</span>E-RCMC</div>
+            <div class="svc-card"><span class="tick">✓</span>ICEGATE Registration / AD Code</div>
+            <div class="svc-card"><span class="tick">✓</span>FSSAI License</div>
+            <div class="svc-card"><span class="tick">✓</span>ISO Certification</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="group-label"><span class="file-no">F-03</span><h3>Filing, Tax &amp; IP</h3></div>
+          <div class="svc-grid">
+            <div class="svc-card"><span class="tick">✓</span>ITR Filing</div>
+            <div class="svc-card"><span class="tick">✓</span>GST Return Filing</div>
+            <div class="svc-card"><span class="tick">✓</span>TDS Return Filing</div>
+            <div class="svc-card"><span class="tick">✓</span>Trademark &amp; Logo Registration</div>
+            <div class="svc-card"><span class="tick">✓</span>Copyright Registration</div>
+            <div class="svc-card"><span class="tick">✓</span>Accounting Services</div>
+            <div class="svc-card"><span class="tick">✓</span>Form DIR-3 KYC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="mono">Kaise Kaam Karta Hai</span>
+        <h2>4 steps mein aapka registration complete</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="mono">Step 1</span>
+          <h4>Form Bharein</h4>
+          <p>Naam, number aur service select karein — 30 second ka kaam.</p>
+        </div>
+        <div class="step">
+          <span class="mono">Step 2</span>
+          <h4>WhatsApp Call</h4>
+          <p>Hamari team turant WhatsApp par contact karti hai.</p>
+        </div>
+        <div class="step">
+          <span class="mono">Step 3</span>
+          <h4>Documents Bhejein</h4>
+          <p>WhatsApp se hi documents share karein — koi office visit nahi.</p>
+        </div>
+        <div class="step">
+          <span class="mono">Step 4</span>
+          <h4>Registration Complete</h4>
+          <p>Certificate seedha aapke WhatsApp/Email par milta hai.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footcta">
+    <div class="wrap">
+      <div class="seal-big"><span>AB</span></div>
+      <h2>Business registration ka jhanjhat khatam — abhi shuru karein</h2>
+      <p>Form bharein ya seedha WhatsApp par message karein — dono tareeke se hum turant reply karte hain.</p>
+      <a class="wa-cta" href="https://wa.me/917796548695?text=Namaste%20Aaminta%20Business%20Services%2C%20mujhe%20apne%20business%20ke%20liye%20registration%20service%20chahiye." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.71.45 3.38 1.29 4.85L2.05 22l5.36-1.4a9.9 9.9 0 0 0 4.63 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.4c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.25-8.25 8.25z"/></svg>
+        Seedha WhatsApp Karein
+      </a>
+    </div>
+  </section>
+
+  <footer class="bottom">
+    <div class="wrap">
+      Aaminta Business Services · GST · MSME · Company Registration · Trademark · FSSAI · IEC aur zyada &nbsp;|&nbsp; WhatsApp: +91 77965 48695
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-card">
+      <div class="tick-big">✓</div>
+      <h3>WhatsApp khul raha hai...</h3>
+      <p>Agar naya tab nahi khula, to neeche diye button se try karein.</p>
+    </div>
+  </div>
+
+<script>
+  const form = document.getElementById('leadForm');
+  const overlay = document.getElementById('overlay');
+  const WHATSAPP_NUMBER = '917796548695';
+
+  function setError(fieldId, show){
+    const el = document.getElementById(fieldId);
+    if(show) el.classList.add('invalid'); else el.classList.remove('invalid');
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const mobile = document.getElementById('mobile').value.trim();
+    const service = document.getElementById('service').value;
+    const timelineEl = document.querySelector('input[name="timeline"]:checked');
+    const timeline = timelineEl ? timelineEl.value : '';
+
+    let valid = true;
+    setError('f-name', false);
+    setError('f-mobile', false);
+    setError('f-service', false);
+    setError('f-timeline', false);
+
+    if(name.length < 2){ setError('f-name', true); valid = false; }
+    if(!/^[6-9]\d{9}$/.test(mobile)){ setError('f-mobile', true); valid = false; }
+    if(!service){ setError('f-service', true); valid = false; }
+    if(!timeline){ setError('f-timeline', true); valid = false; }
+
+    if(!valid){
+      const firstInvalid = document.querySelector('.field.invalid');
+      if(firstInvalid) firstInvalid.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+
+    const message =
+`Namaste Aaminta Business Services! 🙏
+
+Naya Enquiry:
+👤 Naam: ${name}
+📱 Mobile: ${mobile}
+🧾 Service: ${service}
+⏱️ Registration Time: ${timeline}
+
+Kripya contact karein.`;
+
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+    overlay.classList.add('show');
+    setTimeout(function(){
+      window.location.href = waUrl;
+    }, 450);
+  });
+
+  document.getElementById('mobile').addEventListener('input', function(e){
+    e.target.value = e.target.value.replace(/\D/g,'').slice(0,10);
+  });
+</script>
+
+</body>
+</html>
